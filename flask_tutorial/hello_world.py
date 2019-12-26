@@ -1,6 +1,6 @@
 # This line ask the application to import Flask module from flask package.
 # Flask used to create instances of web application.
-from flask import Flask
+from flask import Flask, render_template
 
 # This line create an instance of your web application. __name__ is a special variable in python,
 # it will equal to “__main__” if the module(python file) being executed as the main program.
@@ -12,7 +12,8 @@ app = Flask(__name__)
 # You could set the route to “/hello” and our “hello world” will be shown if we access localhost:5000/hello
 @app.route("/")
 def hello():
-    return "Hello World!"
+    # return "Hello World!"
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
