@@ -1,18 +1,18 @@
 # Fraud classification project
 
-Source: https://www.kaggle.com/mlg-ulb/creditcardfraud
+Source: https://www.kaggle.com/mlg-ulb/creditcardfraud  
 Dataset: https://www.kaggle.com/mlg-ulb/creditcardfraud/download **(1)**
 
 ## Instruction
 
 1. Clone this repository
-2. Load dataset (1) into the cloned repository
+2. Load dataset **(1)** into the cloned repository
 3. Run all cells in **fraud_research.ipynb** to make the prediction model
 4. Launch the Flask bot with command `python fraud_bot.py`
 5. Test your web service with the deployed model
 
-## Format for testing calls
-[comment]: # (There are only 30 features and, yep, they are obscured. It is highly recommended to use datasets with explicit features for your final project.)
+## Format of testing http-requests
+There are only 30 features and, yep, they are obscured. It is highly recommended to use datasets with explicit features for your final project.
 
 ```json
 {
@@ -59,9 +59,9 @@ curl --header "Content-Type: application/json" \
      http://localhost:5000
 ```
 
-`curl` command actually is very simple but popular tool for lightweight networking.  
+`curl` command is actually very simple but a popular tool for a lightweight networking.  
 Of course, there are great alternatives: `http` for example.
 
 If you prefer to have graphical interface to test your web server, **Postman** is a great option. (https://www.postman.com/)  
 
-There are a lot of tutorials with these software pieces.
+There are a lot of tutorials about these software pieces.
